@@ -1,0 +1,90 @@
+/* Header 组件 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+}
+
+.theme-switch,
+.storage-switch {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    transition: all 0.3s;
+    width: 40px; /* 添加固定宽度 */
+    height: 40px; /* 添加固定高度 */
+    display: flex; /* 使用 flex 布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+}
+
+.theme-switch i,
+.storage-switch i {
+    font-size: 1.5rem;
+    color: #64748b;
+    line-height: 1; /* 添加行高 */
+    display: flex; /* 使用 flex 布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+}
+
+/* 统计组件 */
+.todo-count {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.count-box {
+    text-align: center;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 0.5rem;
+}
+
+.count-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #42b983;
+}
+
+/* 进度条组件 */
+.progress-bar {
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 4px;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.progress-value {
+    height: 100%;
+    background: #42b983;
+    transition: width 0.3s ease;
+}
+
+/* 空状态组件 */
+.empty-state {
+    text-align: center;
+    padding: 2rem;
+    color: #94a3b8;
+}
+
+/* 时间组件 */
+.time {
+    text-align: center;
+    color: #64748b;
+    font-size: 0.9rem;
+}

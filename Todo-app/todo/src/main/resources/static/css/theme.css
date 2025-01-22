@@ -1,0 +1,93 @@
+/* 亮色主题 */
+.theme-switch:hover,
+.storage-switch:hover {
+    background: #e2e8f0;
+}
+
+.todo-item:hover {
+    transform: translateX(5px);
+    background: #f1f5f9;
+}
+
+.todo-item.completed {
+    text-decoration: line-through;
+    color: #94a3b8;
+    background: #f1f5f9;
+}
+
+.todo-item .mdi-checkbox-marked-circle {
+    color: #42b983;
+}
+
+.todo-actions button.priority-btn:hover {
+    background: #475569;
+}
+
+/* 暗色主题 */
+.dark-theme {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.dark-theme .container {
+    background: #2d2d2d;
+}
+
+.dark-theme .todo-item {
+    background: #3d3d3d;
+}
+
+.dark-theme .todo-item.completed {
+    background: #2d2d2d;
+    color: #666;
+}
+
+.dark-theme .count-box {
+    background: #3d3d3d;
+}
+
+.dark-theme input {
+    background: #3d3d3d;
+    color: #fff;
+    border-color: #4a4a4a;
+}
+
+.dark-theme .theme-switch,
+.dark-theme .storage-switch {
+    background: #2d2d2d;
+}
+
+.dark-theme .theme-switch:hover,
+.dark-theme .storage-switch:hover {
+    background: #3d3d3d;
+}
+
+/* 动画 */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.empty-state i {
+    font-size: 3rem;
+    animation: bounce 2s infinite;
+}
+
+.fade-enter {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.fade-enter-active {
+    transition: all 0.3s ease;
+}
+
+.fade-leave-active {
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateX(20px);
+}
